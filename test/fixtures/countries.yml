@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  image: MyString
+  size: 1
+  population: 1
+  first_language: MyString
+  currency: MyString
+  exports: MyString
+
+two:
+  name: MyString
+  image: MyString
+  size: 1
+  population: 1
+  first_language: MyString
+  currency: MyString
+  exports: MyString
