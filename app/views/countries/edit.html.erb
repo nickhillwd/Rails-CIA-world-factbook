@@ -1,0 +1,22 @@
+<%= form_for @country do |country| %>
+  <%= country.label :name %>
+  <%= country.text_field :name %>
+  <br>
+  <%= country.label :image %>
+  <%= country.text_field :image %>
+  <br>
+  <%= country.label :size %>
+  <%= country.text_field :size %>
+  <br>
+  <%= country.label :population %>
+  <%= country.text_field :population %>
+  <br>
+  <%= country.label :first_language %>
+  <%= country.text_field :first_language %>
+  <br>
+  <%= country.label :currency %>
+  <%= country.text_field :currency %>
+  <br>
+  <br>
+  <%= country.submit 'Edit Country Data!' %>
+<% end %>
