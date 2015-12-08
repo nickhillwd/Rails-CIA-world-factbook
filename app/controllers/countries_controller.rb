@@ -5,22 +5,22 @@ class CountriesController < ApplicationController
   end
 
   def new
-    # @team = Team.new
+    @country = Country.new
   end
 
   def show
     @countries = Country.find(params[:id])
   end
 
-  # def create
-  #   Team.create(team_params)
-  #   redirect_to(teams_path)
-  # end
+  def create
+    Country.create(country_params)
+    redirect_to(countries_path)
+  end
 
-  # private
+  private
 
-  #   def team_params
-  #     params.require(:team).permit(:name, :image, :founded, :mascot, :league, :last_position, :ground)
-  #   end
+    def country_params
+      params.require(:country).permit(:name, :image, :size, :population, :first_language, :currency)
+    end
 
 end
