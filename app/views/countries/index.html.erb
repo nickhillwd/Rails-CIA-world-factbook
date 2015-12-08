@@ -1,5 +1,9 @@
 <% @countries.each do |country| %>
   <%= country.name %>'s first language is <%= country.first_language %>
   <br>
+    <%= link_to("Show #{country.name}", country_path(country)) %>
+    <br>
+
+    <br>
   
 <% end %>

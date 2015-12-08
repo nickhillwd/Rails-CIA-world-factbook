@@ -8,6 +8,10 @@ class CountriesController < ApplicationController
     # @team = Team.new
   end
 
+  def show
+    @countries = Country.find(params[:id])
+  end
+
   # def create
   #   Team.create(team_params)
   #   redirect_to(teams_path)
