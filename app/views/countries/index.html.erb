@@ -1,9 +1,12 @@
 <% @countries.each do |country| %>
-  <%= country.name %>'s first language is <%= country.first_language %>
+  <h2><%= country.name %></h2>
+  <%= image_tag(country.image, alt: 'No image', width:200) %>
   <br>
-    <%= link_to("Show #{country.name}", country_path(country)) %>
-    <br>
-
-    <br>
-  
+  <%= link_to("Show #{country.name}", country_path(country)) %>
+  <br>
+  <%= button_to('Delete Country', country_path(country), method: :delete, data: {confirm: 'Delete country? Are you sure?!'} ) %>
+  <%= link_to('Edit Country\'s info', edit_country_path(country)) %>
+  <br>
+  <br>
+  <br>
 <% end %>
